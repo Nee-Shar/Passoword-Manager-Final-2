@@ -16,4 +16,4 @@ Status of site:
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d66a531f-6c57-4299-8ff5-42cbdd10a784/deploy-status)]
 <br>
 Site Live at:
-(https://one-password-manager.netlify.app/)
+<a href="(https://one-password-manager.netlify.app/)" target="_blank"> Here </a>
