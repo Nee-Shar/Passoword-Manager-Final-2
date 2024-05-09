@@ -40,7 +40,7 @@ function Signup() {
             <Col>
               <h3 className="text-white text-center">
                 
-               <img className="img-fluid" src="src\assets\Sign up-bro.svg" style={{width:"250px", height:"250px" , borderRadius:"50%",border:"2px solid white"}}></img>
+               <img className="img-fluid" src="./assets/Sign up-bro.svg" style={{width:"250px", height:"250px" , borderRadius:"50%",border:"2px solid white"}}></img>
               </h3>
             </Col>
           </Row>

@@ -33,11 +33,16 @@ function LanderPage() {
         style={{ height: "100vh", display: "flex", alignItems: "center" }}
       >
         <Container style={{ color: "white" }} className="">
-        <Row>
-          <Col sm={12} className="text-center">
-            <img src='src\assets\security-on-animate.svg' className="img-fluid" width="400px" height="300px"></img>
-          </Col>
-        </Row>
+          <Row>
+            <Col sm={12} className="text-center">
+              <img
+                src="./assets/security-on-animate.svg"
+                className="img-fluid"
+                width="400px"
+                height="300px"
+              ></img>
+            </Col>
+          </Row>
           <Row className="text-center mt-0 mb-1">
             <Col sm={12} className="text-center">
               <h1 className="kalam-bold">Lets Secure your online footprint</h1>
@@ -92,14 +97,17 @@ function LanderPage() {
           <Col sm={4}>
             {" "}
             <img
-              src="src\assets\Secure data-bro.svg"
+              src="./assets/Secure data-bro.svg"
               className="img-fluid"
               width="400px"
               height="300px"
             ></img>{" "}
           </Col>
           <Col sm={8} className="text-center mt-2">
-            <h3 className="titillium-web-semibold-italic fw-bolder" style={{textDecoration:"underline"}}>
+            <h3
+              className="titillium-web-semibold-italic fw-bolder"
+              style={{ textDecoration: "underline" }}
+            >
               AES 256 Encryption
             </h3>
             <p className="p-2 ms-2 mr-2">
@@ -116,7 +124,10 @@ function LanderPage() {
       <Container className="text-white mt-4">
         <Row style={{ display: "flex", alignItems: "center" }}>
           <Col sm={8} className="text-center">
-            <h3 className="titillium-web-semibold-italic fw-bolder" style={{textDecoration:"underline"}}>
+            <h3
+              className="titillium-web-semibold-italic fw-bolder"
+              style={{ textDecoration: "underline" }}
+            >
               Password Generator
             </h3>
             <p className="p-2 ms-2 mr-2">
@@ -130,7 +141,7 @@ function LanderPage() {
           <Col sm={4}>
             {" "}
             <img
-              src="src\assets\Forgot password-rafiki.svg"
+              src="./assets/Forgot password-rafiki.svg"
               className="img-fluid"
               width="400px"
               height="300px"
@@ -144,14 +155,19 @@ function LanderPage() {
           <Col sm={4}>
             {" "}
             <img
-              src="src\assets\Key-rafiki.svg"
+              src="./assets/Key-rafiki.svg"
               className="img-fluid"
               width="400px"
               height="300px"
             ></img>{" "}
           </Col>
           <Col sm={8} className="text-center">
-            <h3 className="titillium-web-semibold-italic fw-bolder" style={{textDecoration:"underline"}}>YORO</h3>
+            <h3
+              className="titillium-web-semibold-italic fw-bolder"
+              style={{ textDecoration: "underline" }}
+            >
+              YORO
+            </h3>
             <p className="p-2 ms-2 mr-2">
               You Only Remember One, or YORO, is the core principle of our
               password manager. With YORO, you only need to remember one master
@@ -166,10 +182,8 @@ function LanderPage() {
       </Container>
       <footer className="kalam-light">
         <div className="text-center text-white p-2">
-          <p>
-            Made with ❤️ by{" "} Nee-Shar
-            </p>
-            </div>
+          <p>Made with ❤️ by Nee-Shar</p>
+        </div>
       </footer>
     </>
   );

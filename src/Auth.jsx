@@ -56,7 +56,7 @@ function Authe() {
               <h3 className="text-white text-center">
                 <img
                   className="img-fluid"
-                  src="src\assets\My password-pana.svg"
+                  src="./assets/My password-pana.svg"
                   style={{
                     width: "300px",
                     height: "300px",
