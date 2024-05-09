@@ -8,18 +8,15 @@ import {
   Modal,
   Form,
 } from "react-bootstrap";
-import Toast from "react-bootstrap/Toast";
 import Nave from "./Navy";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import "./list.css";
-import { eencrypt, decrypt ,GeneratePassword } from "./Secure";
+import { eencrypt, decrypt, GeneratePassword } from "./Secure";
 import supabase from "./Client";
-import toast,{ Toaster } from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 const key = import.meta.env.VITE_ENCRYPT_KEY;
-
-
 
 function List() {
   const [data, setData] = useState([]);
@@ -46,7 +43,6 @@ function List() {
     return sessionStorage.getItem("userId") !== null;
   };
 
-
   useEffect(() => {
     const isAuthenticated = checkAuthentication();
     setauth(isAuthenticated);
@@ -66,7 +62,10 @@ function List() {
   const [show, setShow] = useState(false);
   const [subShow, setSubShow] = useState(Array(data.length).fill(false));
   //we are holding an array of what modals to show and waht to hide depnding on click
-  const handleClose = () => {setShow(false); setShowPassword(false);}
+  const handleClose = () => {
+    setShow(false);
+    setShowPassword(false);
+  };
   const handleShow = () => {
     setShow(true);
     setPassword("");
@@ -100,16 +99,14 @@ function List() {
       user_id: sessionStorage.getItem("userId"),
     });
     if (!error) {
-      toast('New Password Added!',
-  {
-    icon: '👏',
-    style: {
-      borderRadius: '10px',
-      background: '#333',
-      color: '#fff',
-    },
-  }
-);
+      toast("New Password Added!", {
+        icon: "👏",
+        style: {
+          borderRadius: "10px",
+          background: "#333",
+          color: "#fff",
+        },
+      });
       fetchData();
     }
   }
@@ -131,15 +128,24 @@ function List() {
   async function deleteData(iid) {
     const { error } = await supabase.from("password").delete().eq("id", iid);
     console.log("Delete");
+    toast(" Password Deleted !", {
+      icon: "❌",
+      style: {
+        borderRadius: "10px",
+        background: "#333",
+        color: "#fff",
+      },
+    });
+
     fetchData();
   }
 
   function logOut() {
     sessionStorage.removeItem("userId");
     sessionStorage.removeItem("hasShownToast");
+    toast.success("Successfully Logged Out !");
     navigate("/");
   }
-
 
   const handleGeneratePassword = () => {
     GeneratePassword().then((generatedPassword) => {
@@ -149,9 +155,8 @@ function List() {
 
   return (
     <div className="absolute top-0 z-[-2] h-screen w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]">
-       <Toaster />
-       
-     
+      <Toaster />
+
       <Nave />
       <Container className="mt-4" style={{ color: "white" }}>
         <Row className="mb-1">
@@ -217,9 +222,13 @@ function List() {
                         {showPassword ? <FaEyeSlash /> : <FaEye />}
                       </Button>
                     </div>
-                    <Button className="mb-2 mt-2" variant="outline-success" onClick={handleGeneratePassword}>Generate Password</Button>
-                    
-   
+                    <Button
+                      className="mb-2 mt-2"
+                      variant="outline-success"
+                      onClick={handleGeneratePassword}
+                    >
+                      Generate Password
+                    </Button>
                   </Form.Group>
                   <Form.Group className="mb-3" controlId="formGroupNotes">
                     <Form.Label>Notes</Form.Label>
@@ -251,7 +260,7 @@ function List() {
         <Row>
           <Col sm={2}></Col>
           <Col sm={7}>
-            <ListGroup >
+            <ListGroup>
               {data.map((item, index) => (
                 <React.Fragment key={index}>
                   <ListGroup.Item
