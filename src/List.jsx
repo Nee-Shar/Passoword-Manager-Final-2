@@ -131,6 +131,7 @@ function List() {
   async function deleteData(iid) {
     const { error } = await supabase.from("password").delete().eq("id", iid);
     console.log("Delete");
+    fetchData();
   }
 
   function logOut() {
