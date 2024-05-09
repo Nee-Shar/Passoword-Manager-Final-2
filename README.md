@@ -11,3 +11,4 @@ SecurePass is a secure password manager web application that allows users to sto
 - **Built with React + Vite**: Leveraging the power of React for frontend development and Vite for fast and efficient build times.
 
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d66a531f-6c57-4299-8ff5-42cbdd10a784/status.svg)](https://app.netlify.com/sites/d66a531f-6c57-4299-8ff5-42cbdd10a784)
