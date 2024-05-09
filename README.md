@@ -14,3 +14,5 @@ SecurePass is a secure password manager web application that allows users to sto
 
 Status of site:
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d66a531f-6c57-4299-8ff5-42cbdd10a784/deploy-status)]
+Site Live at:
+[!https://one-password-manager.netlify.app/]
