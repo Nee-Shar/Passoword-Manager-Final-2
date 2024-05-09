@@ -1,0 +1,145 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(2 6 23);
+}
+
+.titillium-web-extralight {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.titillium-web-extralight-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.titillium-web-light {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.titillium-web-light-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.titillium-web-regular {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titillium-web-regular-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.titillium-web-semibold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.titillium-web-semibold-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.titillium-web-bold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.titillium-web-bold-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+@media (min-width: 320px) {
+  .titillium-web-bold-italic {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 375px) {
+  .titillium-web-bold-italic {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 640px) {
+  .titillium-web-bold-italic {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .titillium-web-bold-italic {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .titillium-web-bold-italic {
+    font-size: 3.2rem;
+  }
+}
+
+.titillium-web-black {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.kalam-light {
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.kalam-regular {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kalam-bold {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@media (min-width: 320px) {
+  .kalam-bold {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 375px) {
+  .kalam-bold {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .kalam-bold {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .kalam-bold {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .kalam-bold {
+    font-size: 5rem;
+  }
+}
