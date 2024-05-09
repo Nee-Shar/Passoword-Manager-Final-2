@@ -1,4 +1,4 @@
-# SecurePass - Password Manager Web App
+# One Password Manager Web App
 
 SecurePass is a secure password manager web application that allows users to store their passwords safely using AES 256 encryption. With SecurePass, you only need to remember one master password, and the rest of your passwords are stored securely in the database. The application utilizes Supabase for authentication and database management, ensuring a robust and reliable solution for password management.
 
