@@ -24,7 +24,7 @@ function Signup() {
         Name: Name,
       });
       alert("Verify Your Email by clicking the link sent to your email (check spam too) ")
-      navigate("/");
+      navigate("/login");
     } catch (error) {
       console.log(error);
     }
